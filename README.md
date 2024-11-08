@@ -1,5 +1,5 @@
 # Personal Curriculum Portfolio
-<img src="./thumbnail.png" alt="personal portfolio thumbnail"/>
+<img src="https://iamjulio.dev/cv/img/thumbnail.png" alt="personal portfolio thumbnail"/>
 ```sh
 npm create astro@latest -- --template basics
 ```
