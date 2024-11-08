@@ -1,5 +1,5 @@
-# Astro Starter Kit: Basics
-
+# Personal Curriculum Portfolio
+<img src="./thumbnail.png" alt="personal portfolio thumbnail"/>
 ```sh
 npm create astro@latest -- --template basics
 ```
