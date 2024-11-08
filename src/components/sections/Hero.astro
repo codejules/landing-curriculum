@@ -1,0 +1,162 @@
+---
+import { basics } from "@cv";
+
+import Section from "@/components/Section.astro";
+import Mail from "@/icons/Mail.astro";
+import Phone from "@/icons/Phone.astro";
+import World from "@/icons/World.astro";
+import Github from "@/icons/Github.astro";
+import Linkedin from "@/icons/Linkedin.astro";
+import X from "@/icons/X.astro";
+
+const SOCIAL_ICONS: Record<string, any> = {
+    Github,
+    Linkedin,
+    X,
+};
+
+const { name, label, image, phone, email, profiles, location } = basics;
+const { city, region } = location;
+
+// obtener URL de linkedin
+const linkedInfo = profiles.find(({ network }) => {
+    return network === "Linkedin";
+});
+
+const linkedinUrl = linkedInfo?.url;
+
+// filtrar los elementos del array
+const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(" • ");
+---
+
+<Section>
+    <div class="container">
+        <div class="info">
+            <h1>{name}</h1>
+            <p>{label}</p>
+            <div class="social">
+                <div class="city"><World /> {city}, {region}</div>
+
+                <footer class="print">{printInfo}</footer>
+
+                <footer class="no-print">
+                    {
+                        email && (
+                            <a
+                                href={`mailto:${email}`}
+                                title={`Enviar un correo electrónico a ${name} al correo ${email}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Mail />
+                            </a>
+                        )
+                    }
+                    {
+                        phone && (
+                            <a
+                                href={`tel:${phone}`}
+                                title={`Realizar una llamada a ${name} al número ${phone}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Phone />
+                            </a>
+                        )
+                    }
+                    {
+                        profiles.map(({ network, username, url }) => {
+                            const Icon = SOCIAL_ICONS[network];
+
+                            return (
+                                <a
+                                    href={url}
+                                    title={`Visitar el perfil de ${name} en ${network}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <Icon />
+                                </a>
+                            );
+                        })
+                    }
+                </footer>
+            </div>
+        </div>
+        <div class="img">
+            <figure>
+                <img src={image} alt={name} />
+            </figure>
+        </div>
+    </div>
+</Section>
+
+<style>
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        align-items: center;
+        display: grid;
+        gap: 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .city {
+        align-items: center;
+        color: #666666;
+        font-size: 0.7rem;
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .social {
+        align-items: start;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    img {
+        aspect-ratio: 1 / 1;
+        border-radius: 6px;
+        height: 110px;
+        width: 110px;
+    }
+
+    footer {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    footer a {
+        align-items: center;
+        border: 1px solid #999999;
+        border-radius: 4px;
+        color: #888888;
+        display: inline-flex;
+        height: 32px;
+        justify-content: center;
+        padding: 0.2rem;
+        transition: all 0.3s ease;
+        width: 32px;
+    }
+
+    footer a:hover {
+        background-color: #eee;
+    }
+
+    @container (width > 600px) {
+        .container {
+            display: flex;
+        }
+    }
+</style>

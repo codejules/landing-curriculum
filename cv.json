@@ -1,0 +1,159 @@
+{
+  "basics": {
+    "name": "Julio Serra",
+    "label": "Frontend Developer con más de 15 años de experiencia en la creación de soluciones innovadoras y personalizadas.",
+    "image": "./me.webp",
+    "email": "linkedin@iamjulio.dev",
+    "phone": "+34626246607",
+    "url": "https://iamjulio.dev",
+    "summary": "Desarrollador Salesforce especializado en Commerce, con sólida experiencia en la creación de soluciones innovadoras y personalizadas. Dominio en HTML, CSS y JavaScript, complementado con habilidades en gestión de versiones a través de GitHub y Bitbucket. Familiarizado con herramientas de Atlassian, lo que me permite colaborar de manera efectiva en equipos ágiles. Apasionado por mejorar la experiencia del usuario y optimizar procesos de desarrollo.",
+    "location": {
+      "address": "",
+      "postalCode": "46021",
+      "city": "Valencia",
+      "countryCode": "ES",
+      "region": "España"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "codejules",
+        "url": "https://github.com/codejules"
+      },
+      {
+        "network": "Linkedin",
+        "username": "julio-serra-developer",
+        "url": "https://linkedin.com/in/julio-serra-developer/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Seidor Consulting",
+      "position": "Salesforce Developer",
+      "url": "https://seidor.com",
+      "startDate": "2022-05-02",
+      "endDate": "2024-10-28",
+      "summary": "Desarrollador Salesforce Commerce con experiencia en el desarrollo y mantenimiento de soluciones web en la plataforma Salesforce. Especializado en la configuración y creación de servicios en Business Manager, así como en el desarrollo de controladores, helpers y diversos archivos que aseguran una visualización óptima de la web para los clientes. Comprometido con la mejora continua y la entrega de experiencias digitales de alta calidad.",
+      "highlights": [
+        "Remote"
+      ]
+    },
+    {
+      "name": "Estudio Numérico",
+      "position": "Frontend Developer",
+      "url": "https://estudionumerico.com",
+      "startDate": "2018-07-01",
+      "endDate": "2022-04-22",
+      "summary": "Diseñador web con experiencia en maquetación, HTML5, CSS3 y frameworks como Bootstrap y TailwindCSS. Trabajo con diversas bases de datos y entornos back-end y front-end, además de gestionar contenidos en WordPress."
+    },
+    {
+      "name": "JS Web Design",
+      "position": "Web Developer",
+      "startDate": "2011-12-11",
+      "endDate": "2018-06-29",
+      "summary": "Maquetación y puesta en marcha de páginas web utilizando, HTML5 y CSS3. Experto en la personalización de CMS como WordPress, Joomla y PrestaShop, con conocimientos en posicionamiento web (SEO) para optimizar la visibilidad en buscadores. Experto en gestión de redes sociales para atraer y fidelizar clientes, además de la administración de servidores web para asegurar un rendimiento óptimo."
+    }
+  ],
+  "education": [
+    {
+      "institution": "B2C Commerce Developer",
+      "startDate": "2023-02-01",
+      "endDate": "2023-03-03",
+      "courses": [
+        "Certificación Salesforce B2C Commerce Developer. "
+      ]
+    },
+    {
+      "institution": "Neoland: Bootcamp Full Stack Web developer",
+      "startDate": "2021-10-01",
+      "endDate": "2022-06-24",
+      "courses": [
+        "Programación y maquetación HTML5, CSS3 y JavaScript. Desarrollo Front-end de aplicaciones y proyectos Web/App con ReactJS. Desarrollo Back-end en JavaScript con NodeJS, ExpressJS y MongoDB."
+      ]
+    },
+    {
+      "institution": "Master D: Desarrollo Apps iPhone",
+      "startDate": "2018-06-04",
+      "endDate": "2019-09-13",
+      "courses": [
+        "Programación y maquetación HTML5, CSS3 y JavaScript. Desarrollo Front-end de aplicaciones y proyectos Web/App con ReactJS. Desarrollo Back-end en JavaScript con NodeJS, ExpressJS y MongoDB."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "Javascript",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Diseño Fullstack"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "Git",
+      "keywords": [
+        "Control de versiones",
+        "Colaboración",
+        "Código Fuente"
+      ]
+    },
+    {
+      "name": "Github",
+      "keywords": [
+        "Control de versiones",
+        "Colaboración",
+        "Código Fuente"
+      ]
+    },
+    {
+      "name": "React",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "UI"
+      ]
+    },
+    {
+      "name": "Astro",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Libraries",
+        "Javascript UI Components"
+      ]
+    },
+    {
+      "name": "Salesforce Commerce Develop",
+      "keywords": [
+        "SFRA",
+        "Controllers",
+        "Templates ISML"
+      ]
+    }
+  ]
+}

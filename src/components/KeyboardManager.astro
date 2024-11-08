@@ -1,0 +1,67 @@
+<footer class="no-print">
+    Pulsa <kbd>Cmd</kbd> + <kbd>K</kbd> para abrir la paleta de comandos.
+</footer>
+
+<ninja-keys hideBreadcrumbs="true" placeholder="Buscar comando"></ninja-keys>
+
+<script>
+    import "ninja-keys";
+
+    const ninja = document.querySelector("ninja-keys");
+
+    if (ninja !== null) {
+        ninja.data = [
+            {
+                id: "print",
+                title: "Imprimir 🖨️",
+                hotkey: "ctrl+P",
+                section: "Acciones",
+                handler: () => {
+                    window.print();
+                },
+            },
+        ];
+    }
+</script>
+
+<style>
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    footer {
+        background-color: #fefefe;
+        border-top: 1px solid #888;
+        bottom: 0;
+        font-size: 0.6rem;
+        padding-block: 16px;
+        position: fixed;
+        text-align: center;
+        width: 100%;
+
+        view-timeline-name: --revealing;
+        view-timeline-axis: block;
+
+        animation: linear 0.3s fadeIn;
+        animation-timeline: --revealing;
+        animation-range: entry 100% cover 10%;
+    }
+
+    @media (width < 1200px) {
+        footer {
+            display: none;
+        }
+    }
+
+    kbd {
+        background-color: #eee;
+        border-radius: 4px;
+        font-size: 0.6rem;
+        padding: 2px 4px;
+    }
+</style>
