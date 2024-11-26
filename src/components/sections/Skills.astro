@@ -31,7 +31,7 @@ const ICONS_SKILLS: Record<string, any> = {
             skills.map(({ name }) => {
                 const iconName = 
                 name === "Astro" ? "Astro_Framework" : 
-                name === "Salesforce Commerce Develop" ? "Salesforce" : name;
+                name.includes('Salesforce') ? "Salesforce" : name;
                 
                 const Icon = ICONS_SKILLS[iconName];
                 return (

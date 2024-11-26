@@ -57,6 +57,14 @@
   ],
   "education": [
     {
+      "institution": "Certified Associate Salesforce",
+      "startDate": "2024-10-14",
+      "endDate": "2024-11-26",
+      "courses": [
+        "Certificación Salesforce Associate."
+      ]
+    },
+    {
       "institution": "B2C Commerce Developer",
       "startDate": "2023-02-01",
       "endDate": "2023-03-03",
@@ -154,6 +162,14 @@
         "Controllers",
         "Templates ISML"
       ]
-    }
+    },
+    {
+      "name": "Salesforce Associate",
+      "keywords": [
+        "Administrator",
+        "Sales",
+        "Service Cloud"
+      ]
+    } 
   ]
 }
