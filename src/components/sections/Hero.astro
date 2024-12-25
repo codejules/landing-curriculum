@@ -32,8 +32,8 @@ const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(" • ");
 <Section>
     <div class="container">
         <div class="info">
-            <h1>{name}</h1>
-            <p>{label}</p>
+            <h1 class="dark:text-white text-black">{name}</h1>
+            <p class="dark:text-white/40 text-black/60">{label}</p>
             <div class="social">
                 <div class="city"><World /> {city}, {region}</div>
 
@@ -83,11 +83,9 @@ const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(" • ");
                 </footer>
             </div>
         </div>
-        <div class="img">
-            <figure>
-                <img src={image} alt={name} />
-            </figure>
-        </div>
+        <figure class="size-36">
+            <img class="rounded" src={image} alt={name} />
+        </figure>
     </div>
 </Section>
 
@@ -123,13 +121,6 @@ const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(" • ");
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-    }
-
-    img {
-        aspect-ratio: 1 / 1;
-        border-radius: 6px;
-        height: 110px;
-        width: 110px;
     }
 
     footer {

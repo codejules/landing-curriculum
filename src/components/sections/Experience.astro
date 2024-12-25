@@ -31,7 +31,7 @@ import Section from "@/components/Section.astro";
                                     <header>
                                         <div>
                                             <a
-                                                class="link"
+                                                class="dark:text-white/80 text-black font-semibold"
                                                 href={url}
                                                 target="_blank"
                                                 title={name}
@@ -44,12 +44,12 @@ import Section from "@/components/Section.astro";
                                                     {highlights}
                                                 </span>
                                             )}
-                                            <h3>{position}</h3>
+                                            <h3 class="dark:text-white/80 text-black font-semibold">{position}</h3>
                                         </div>
-                                        <time>{years}</time>
+                                        <time class="dark:text-white text-black">{years}</time>
                                     </header>
                                     <footer>
-                                        <p>{summary}</p>
+                                        <p class="dark:text-white/40 text-black/60">{summary}</p>
                                     </footer>
                                 </article>
                             </li>
@@ -72,12 +72,6 @@ import Section from "@/components/Section.astro";
         margin-bottom: 0.7rem;
     }
 
-    .link {
-        color: #000;
-        font-size: 1.1rem;
-        font-weight: 700;
-        transition: all 0.3s ease;
-    }
 
     .link:hover {
         color: #555;

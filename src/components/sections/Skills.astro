@@ -35,7 +35,7 @@ const ICONS_SKILLS: Record<string, any> = {
                 
                 const Icon = ICONS_SKILLS[iconName];
                 return (
-                    <li>
+                    <li class="bg-gray-200 hover:bg-black/20 dark:bg-black/60 dark:hover:bg-white/20  border flex items-center gap-1 dark:text-white text-black px-2 py-1 rounded-md text-xs transition-all duration-300 ease-in-out">
                         {Icon && <Icon />}
                         <span>{name}</span>
                     </li>
@@ -53,7 +53,7 @@ const ICONS_SKILLS: Record<string, any> = {
         justify-content: start;
     }
 
-    li {
+/*     li {
         align-items: center;
         background-color: #111827cc;
         border-radius: 5px;
@@ -65,9 +65,5 @@ const ICONS_SKILLS: Record<string, any> = {
         min-height: 31px;
         padding: 0.2rem 0.6rem;
         transition: all 0.3s ease;
-    }
-
-    li:hover {
-        background-color: #888;
-    }
+    } */
 </style>
