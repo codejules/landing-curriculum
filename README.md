@@ -1,5 +1,6 @@
 # Personal Curriculum Portfolio
-<img src="https://iamjulio.dev/cv/img/thumbnail.png" alt="personal portfolio thumbnail"/>
+![177shots_so](https://github.com/user-attachments/assets/50762c5e-1b55-40a0-b0e0-cf373bbe96ea)
+
 
 ## 🛠️ Stack
 
