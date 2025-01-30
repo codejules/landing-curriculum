@@ -106,7 +106,15 @@
       ]
     },
     {
-      "name": "Javascript",
+      "name": "JavaScript",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Diseño Fullstack"
+      ]
+    },
+    {
+      "name": "TypeScript",
       "keywords": [
         "Desarrollo Web",
         "Frontend",
@@ -170,6 +178,6 @@
         "Sales",
         "Service Cloud"
       ]
-    } 
+    }
   ]
 }
